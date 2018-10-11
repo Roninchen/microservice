@@ -1,0 +1,17 @@
+server:
+  port: 8763
+
+spring:
+  application:
+    name: wxpay-client
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+#Œ¢–≈÷ß∏∂
+apppid: wx8397f8696b538317
+partner: 1473426802
+partnerkey: 8A627A4578ACE384017C997F12D68B23
+notifyurl: http://a31ef7db.ngrok.io/WeChatPay/WeChatPayNotify

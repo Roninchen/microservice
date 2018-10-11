@@ -1,0 +1,37 @@
+server:
+  port: 8762
+
+spring:
+  application:
+    name: file-client
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+# 分布式文件系统fastdfs配置
+fdfs:
+  # socket连接超时时长
+  soTimeout: 1500
+  # 连接tracker服务器超时时长
+  connectTimeout: 600
+  pool:
+    # 从池中借出的对象的最大数目
+    max-total: 153
+    # 获取连接时的最大等待毫秒数100
+    max-wait-millis: 102
+  # 缩略图生成参数
+  thumbImage:
+    width: 150
+    height: 150
+  # 跟踪服务器tracker_server请求地址,支持多个，这里只有一个，如果有多个在下方加
+  trackerList:
+    - 111.231.84.238:22122
+  #访问地址
+  web-server-url: http://111.231.84.238/
+  spring:
+    http:
+      multipart:
+        max-file-size: 100MB
+        max-request-size: 100MB
+
