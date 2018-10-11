@@ -7,3 +7,23 @@ server:
 spring:
   application:
     name: service-feign
+
+#¼ÓÈÛ¶ÏÆ÷
+feign:
+  hystrix:
+    enabled: true
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 100000
+#        timeout:
+#          enabled: false
+#ribbon:
+#  ReadTimeout: 5000
+#  ConnectTimeout: 3000
+#  maxAutoRetries: 1
+#  MaxAutoRetriesNextServer: 2
+#  OkToRetryOnAllOperations: true
