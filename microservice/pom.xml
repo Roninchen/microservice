@@ -68,6 +68,8 @@
         <module>file-client</module>
         <module>wxpay-client</module>
         <module>ribbon-consumer</module>
+        <module>service-hi</module>
+        <module>service-feign</module>
     </modules>
 
     <dependencyManagement>
