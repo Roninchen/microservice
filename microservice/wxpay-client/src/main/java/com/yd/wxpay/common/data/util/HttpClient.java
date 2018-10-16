@@ -46,7 +46,7 @@ import org.apache.http.util.EntityUtils;
 /**
  * http请求客户端
  * 
- * @author Administrator
+ * @author yd
  * 
  */
 public class HttpClient {
